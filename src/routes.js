@@ -8,6 +8,7 @@ const Routes = () => (
     <Router history={history}>
       <Switch>
         <Route exact path="/" component={page.HomePage} />
+        <Route exact path="/items" component={page.ItemPage} />
       </Switch>
     </Router>
   </div>
