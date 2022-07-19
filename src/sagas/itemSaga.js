@@ -12,6 +12,9 @@ function* getItemSaga(action) {
 }
 function* addItemSaga(action) {
     console.log('213123213');
+    console.log('dasd');
+    console.log('cc wibu');
+    console.log('yeuemhiennnn');
     try {
         let form = action.payload.form
         console.log(form,'res');
