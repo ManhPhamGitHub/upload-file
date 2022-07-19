@@ -10,6 +10,7 @@ import createSagaMiddleware from 'redux-saga';
 import rootSaga from './sagas';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+console.log("manh test");
 const sagaMiddleware = createSagaMiddleware();
 const store = createStore(rootReducer, applyMiddleware(sagaMiddleware, logger));
 sagaMiddleware.run(rootSaga);
