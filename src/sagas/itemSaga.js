@@ -11,8 +11,12 @@ function* getItemSaga(action) {
     }
 }
 function* addItemSaga(action) {
+    console.log('213123213');
+    console.log('dasd');
+
     try {
         let form = action.payload.form
+        console.log(form,'res');
         yield callApi(types.HTTP_CREATE,'',form)
         yield put (actions.addItemSuccess())
         yield put (actions.getItemRequest()) 
