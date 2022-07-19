@@ -12,8 +12,6 @@ function* getItemSaga(action) {
 }
 function* addItemSaga(action) {
     console.log('213123213');
-    console.log('dasd');
-
     try {
         let form = action.payload.form
         console.log(form,'res');
@@ -37,6 +35,7 @@ function* updateItemSaga(action) {
 }
 function* deleteItemSaga(action) {
     try {
+    console.log('delete');
         let id = action.payload.id
         yield callApi(types.HTTP_DELETE,id)
         yield put (actions.deleteItemSuccess()) 
